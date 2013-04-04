@@ -1,7 +1,7 @@
 #
 # Author:: Yvo van Doorn (<yvo@opscode.com>)
 # Cookbook Name:: vcruntime
-# Recipe:: default
+# Recipe:: vc9
 #
 # Copyright:: 2013, Opscode, Inc.
 #
@@ -17,3 +17,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Installs VC9 runtimes
+
+include_recipe "windows"
+
+
+
+case node['kernel']['machine']
+when "x86_64"
+  windows_package 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17' do
+    source node['vc9']['x64']['tools']['pkg']['windows']['url']
+    installer_type :custom
+    options '/q'
+  end
+when /i[3-6]86/
+  windows_package 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17' do
+    source node['vc9']['x86']['tools']['pkg']['windows']['url']
+    installer_type :custom
+    options '/q'
+  end
+end
+  

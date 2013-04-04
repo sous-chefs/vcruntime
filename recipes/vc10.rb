@@ -1,7 +1,7 @@
 #
 # Author:: Yvo van Doorn (<yvo@opscode.com>)
 # Cookbook Name:: vcruntime
-# Recipe:: default
+# Recipe:: vc10
 #
 # Copyright:: 2013, Opscode, Inc.
 #
@@ -17,3 +17,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+include_recipe "windows"
+
+case node['kernel']['machine']
+when "x86_64"
+  windows_package 'Microsoft Visual C++ 2010  x64 Redistributable - 10.0.30319' do
+    source node['vc10']['x64']['tools']['pkg']['windows']['url']
+    installer_type :custom
+    options '/q'
+  end
+when /i[3-6]86/
+  windows_package 'Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319' do
+    source node['vc10']['x86']['tools']['pkg']['windows']['url']
+    installer_type :custom
+    options '/q'
+  end
+end
+  
