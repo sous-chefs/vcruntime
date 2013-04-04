@@ -14,3 +14,6 @@ depends "windows"
 
 provides "vcruntime::vc9"
 provides "vcruntime::vc10"
+
+recipe	"vcruntime::vc9", "Visual C++ 2008 runtimes"
+recipe	"vcruntime::vc10", "Visual C++ 2010 runtimes"
