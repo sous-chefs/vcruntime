@@ -1,0 +1,5 @@
+[gerrit]
+host=review.azure.can.cd
+port=29418
+project=vcruntime.git
+defaultbranch=master
