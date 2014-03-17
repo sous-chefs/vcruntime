@@ -1,7 +1,7 @@
 Microsoft Visual C++ Runtime Cookbook
 =====================================
 
-Installs Microsoft Visual C++ runtime version 9 or 10 on Windows.
+Installs Microsoft Visual C++ runtime version 9,10 or 12 on Windows.
 
 Requirements
 ------------
@@ -40,6 +40,12 @@ Attributes
     <td><tt>http://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF6E/vcredist_x86.exe</tt></td>
   </tr>
   <tr>
+    <td><tt>['vc12']['x86']['tools']['pkg']['windows']['url']</tt></td>
+    <td>String</td>
+    <td>VC12 x86 source</td>
+    <td><tt>http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe</tt></td>
+  </tr>
+  <tr>
     <td><tt>['vc9']['x64']['tools']['pkg']['windows']['url']</tt></td>
     <td>String</td>
     <td>VC9 x64 source</td>
@@ -50,6 +56,12 @@ Attributes
     <td>String</td>
     <td>VC10 x64 source</td>
     <td><tt>http://download.microsoft.com/download/3/2/2/3224B87F-CFA0-4E70-BDA3-3DE650EFEBA5/vcredist_x64.exe</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['vc12']['x64']['tools']['pkg']['windows']['url']</tt></td>
+    <td>String</td>
+    <td>VC12 x64 source</td>
+    <td><tt>http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe</tt></td>
   </tr>
 </table>
 
