@@ -67,9 +67,9 @@ Attributes
 
 Usage
 -----
-#### vcruntime::vc9 or vcruntime::vc10
+#### vcruntime::vc9, vcruntime::vc10 or vcruntime::vc12 
 
-Just include `vcruntime::vc9` or `vcruntime::vc10` in your node's `run_list`:
+Just include `vcruntime::vc9`, `vcruntime::vc10`, or vcruntime::vc12 in your node's `run_list`:
 
 ```json
 {
