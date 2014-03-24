@@ -4,7 +4,7 @@ maintainer_email 'yvo@opscode.com'
 license          'All rights reserved'
 description      'Installs/Configures vcruntime'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.1.5"
+version          "0.1.6"
 
 %w{ windows }.each do |os|
   supports os
