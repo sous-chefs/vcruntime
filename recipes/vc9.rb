@@ -19,25 +19,27 @@
 #
 # Installs VC9 runtimes
 
-include_recipe "windows"
+include_recipe 'windows'
 
 case node['kernel']['machine']
-when "x86_64"
-  windows_package 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17' do
+when 'x86_64'
+  windows_package node['vc9']['x64']['tools']['pkg']['windows']['name'] do
+    checksum node['vc9']['x64']['tools']['pkg']['windows']['sha256sum']
     source node['vc9']['x64']['tools']['pkg']['windows']['url']
     installer_type :custom
     options '/q'
   end
-  windows_package 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17' do
+  windows_package node['vc9']['x86']['tools']['pkg']['windows']['name'] do
+    checksum node['vc9']['x86']['tools']['pkg']['windows']['sha256sum']
     source node['vc9']['x86']['tools']['pkg']['windows']['url']
     installer_type :custom
     options '/q'
   end
 when /i[3-6]86/
-  windows_package 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17' do
+  windows_package node['vc9']['x86']['tools']['pkg']['windows']['name'] do
+    checksum node['vc9']['x86']['tools']['pkg']['windows']['sha256sum']
     source node['vc9']['x86']['tools']['pkg']['windows']['url']
     installer_type :custom
     options '/q'
   end
 end
-  
