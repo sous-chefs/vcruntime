@@ -11,7 +11,7 @@ include_attribute 'vcruntime::vc12'
   ['url', 'sha256sum', 'name'].each do |attribut|
     ['x86', 'x64'].each do |arch|
       vc_version = node[vc]['version']
-      default[vc][arch]['tools']['pkg']['windows'][attribut] = node[vc][arch]['windows']['pkg'][vc_version][attribut]
+      default[vc][arch]['tools']['pkg']['windows'][attribut] = node[vc]['catalog'][arch][vc_version][attribut]
     end
   end
 end
