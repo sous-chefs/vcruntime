@@ -1,17 +1,14 @@
-# Defines the three VCs
-default['vc9']['version']  = '9.0.21022.8'
-default['vc10']['version'] = '10.0.30319'
-default['vc12']['version'] = '11.0.61030'
-
-include_attribute 'vcruntime::vc9'
-include_attribute 'vcruntime::vc10'
-include_attribute 'vcruntime::vc12'
-
-['vc9', 'vc10', 'vc12'].each do |vc|
-  ['url', 'sha256sum', 'name'].each do |attribut|
-    ['x86', 'x64'].each do |arch|
-      vc_version = node[vc]['version']
-      default[vc][arch]['tools']['pkg']['windows'][attribut] = node[vc]['catalog'][arch][vc_version][attribut]
-    end
-  end
-end
+# Copyright:: Copyright (c) 2014, Opscode, Inc.
+# License:: Apache License, Version 2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.

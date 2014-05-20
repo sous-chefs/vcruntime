@@ -12,3 +12,13 @@ default['vc9']['catalog']['x86']['9.0.30729.17']['name']      = 'Microsoft Visua
 default['vc9']['catalog']['x64']['9.0.30729.17']['url']       = 'http://download.microsoft.com/download/2/d/6/2d61c766-107b-409d-8fba-c39e61ca08e8/vcredist_x64.exe'
 default['vc9']['catalog']['x64']['9.0.30729.17']['sha256sum'] = '55bf99ad3f063165c3ee1626787b5d4c2b65b5001fef79dd58c3490369ed282f'
 default['vc9']['catalog']['x64']['9.0.30729.17']['name']      = 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17'
+
+# Defines the three VCs
+default['vc9']['version']  = '9.0.21022.8'
+
+['url', 'sha256sum', 'name'].each do |attribut|
+  ['x86', 'x64'].each do |arch|
+    vc_version = node['vc9']['version']
+    default['vc9'][arch]['tools']['pkg']['windows'][attribut] = node['vc9']['catalog'][arch][vc_version][attribut]
+  end
+end

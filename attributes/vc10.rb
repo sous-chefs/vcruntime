@@ -12,3 +12,13 @@ default['vc10']['catalog']['x86']['10.0.40219']['name']      = 'Microsoft Visual
 default['vc10']['catalog']['x64']['10.0.40219']['url']       = 'http://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe'
 default['vc10']['catalog']['x64']['10.0.40219']['sha256sum'] = 'c6cd2d3f0b11dc2a604ffdc4dd97861a83b77e21709ba71b962a47759c93f4c8'
 default['vc10']['catalog']['x64']['10.0.40219']['name']      = 'Microsoft Visual C++ 2010 x64 Redistributable - 10.0.40219'
+
+# Defines the three VCs
+default['vc10']['version'] = '10.0.30319'
+
+['url', 'sha256sum', 'name'].each do |attribut|
+  ['x86', 'x64'].each do |arch|
+    vc_version = node['vc10']['version']
+    default['vc10'][arch]['tools']['pkg']['windows'][attribut] = node['vc10']['catalog'][arch][vc_version][attribut]
+  end
+end
