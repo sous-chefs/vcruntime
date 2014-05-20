@@ -1,0 +1,6 @@
+.kitchen.yml
+.kitchen/*
+Berksfile*
+Gemfile
+Vagrantfile.windows.erb
+chefignore
