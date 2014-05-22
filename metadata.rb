@@ -4,7 +4,7 @@ maintainer_email 'yvo@opscode.com'
 license          'All rights reserved'
 description      'Installs Microsoft Visual C++ Runtimes'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.2.0'
+version          '0.2.1'
 
 %w{ windows }.each do |os|
   supports os
