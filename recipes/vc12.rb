@@ -1,22 +1,36 @@
 #
+# Author:: Yvo van Doorn (<yvo@opscode.com>)
 # Cookbook Name:: vcruntime
 # Recipe:: vc12
-# Installs runtime for VS 2012
-
-include_recipe "windows"
+#
+# Copyright:: 2013, Opscode, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
 case node['kernel']['machine']
-when "x86_64"
-  windows_package 'Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030' do
-    source node['vc12']['x64']['tools']['pkg']['windows']['url']
+when 'x86_64'
+  windows_package node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['name'] do
+    checksum node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['sha256sum']
+    source node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['url']
     installer_type :custom
     options '/q'
   end
 when /i[3-6]86/
-  windows_package 'Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030' do
-    source node['vc12']['x86']['tools']['pkg']['windows']['url']
+  windows_package node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['name'] do
+    checksum node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['sha256sum']
+    source node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['url']
     installer_type :custom
     options '/q'
   end
 end
-  

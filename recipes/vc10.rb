@@ -18,20 +18,19 @@
 # limitations under the License.
 #
 
-include_recipe "windows"
-
 case node['kernel']['machine']
-when "x86_64"
-  windows_package 'Microsoft Visual C++ 2010  x64 Redistributable - 10.0.30319' do
-    source node['vc10']['x64']['tools']['pkg']['windows']['url']
+when 'x86_64'
+  windows_package node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['name'] do
+    checksum node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['sha256sum']
+    source node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['url']
     installer_type :custom
     options '/q'
   end
 when /i[3-6]86/
-  windows_package 'Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319' do
-    source node['vc10']['x86']['tools']['pkg']['windows']['url']
+  windows_package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
+    checksum node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum']
+    source node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['url']
     installer_type :custom
     options '/q'
   end
 end
-  

@@ -17,27 +17,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Installs VC9 runtimes
-
-include_recipe "windows"
 
 case node['kernel']['machine']
-when "x86_64"
-  windows_package 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17' do
-    source node['vc9']['x64']['tools']['pkg']['windows']['url']
+when 'x86_64'
+  windows_package node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['name'] do
+    checksum node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['sha256sum']
+    source node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['url']
     installer_type :custom
     options '/q'
   end
-  windows_package 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17' do
-    source node['vc9']['x86']['tools']['pkg']['windows']['url']
+  windows_package node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name'] do
+    checksum node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum']
+    source node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['url']
     installer_type :custom
     options '/q'
   end
 when /i[3-6]86/
-  windows_package 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17' do
-    source node['vc9']['x86']['tools']['pkg']['windows']['url']
+  windows_package node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name'] do
+    checksum node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum']
+    source node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['url']
     installer_type :custom
     options '/q'
   end
 end
-  
