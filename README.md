@@ -1,20 +1,23 @@
 Microsoft Visual C++ Runtime Cookbook
 =====================================
 
-Installs Microsoft Visual C++ runtime version 9, 10 or 12 on Windows.
+[![Cookbook Version](https://img.shields.io/cookbook/v/vcruntime.svg)](https://supermarket.chef.io/cookbooks/vcruntime)
+
+
+Installs Microsoft Visual C++ runtime version 9 (2008), 10 (2010) or 12 (2012) on Windows.
 
 Requirements
 ------------
-
-#### Cookbooks
-
-* windows
-
 #### Platforms
-
 * Microsoft Windows 2008 R2
 * Microsoft Windows 2012
 * Microsoft Windows 2012 R2
+
+#### Chef
+- Chef 11+
+
+#### Cookbooks
+* windows
 
 Attributes
 ----------
@@ -46,17 +49,24 @@ Just include `vcruntime::vc9`, `vcruntime::vc10`, or vcruntime::vc12 in your nod
 License and Authors
 -------------------
 
-* Author:: Yvo Van Doorn (<yvo@getchef.com>)
-* Author:: Dan Robinson (<drobinson@getchef.com>)
-* Author:: Julian Dunn (<jdunn@getchef.com>)
+**Author:** Yvo Van Doorn (<yvo@chef.io>)
 
-* Copyright (C) 2013 Opscode, Inc.
-* Copyright (C) 2014 Chef Software, Inc.
+**Author:** Dan Robinson (<drobinson@chef.io>)
 
-```text
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+**Author:** Julian Dunn (<jdunn@chef.io>)
 
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+**Copyright:** 2013-2015, Chef Software, Inc.
 ```
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
