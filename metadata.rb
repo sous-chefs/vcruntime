@@ -19,3 +19,7 @@ provides 'vcruntime::vc12'
 recipe	"vcruntime::vc9", "Visual C++ 2008 runtimes"
 recipe	"vcruntime::vc10", "Visual C++ 2010 runtimes"
 recipe	"vcruntime::vc12", "Visual C++ 2012 runtimes"
+
+source_url 'https://github.com/chef-windows/vcruntime' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-windows/vcruntime/issues' if respond_to?(:issues_url)
+
