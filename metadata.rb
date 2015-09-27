@@ -1,6 +1,6 @@
 name             'vcruntime'
 maintainer       'Yvo van Doorn'
-maintainer_email 'yvo@opscode.com'
+maintainer_email 'yvo@chef.io'
 license          'Apache 2.0'
 description      'Installs Microsoft Visual C++ Runtimes'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
