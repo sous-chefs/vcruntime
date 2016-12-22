@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 0.2.2:
+
+* Added VS 2005 Runtime
+
 ## 0.2.0:
 
 * Refactor to allow the installation of older versions of the Visual C++ Runtime.
