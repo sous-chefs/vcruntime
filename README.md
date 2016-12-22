@@ -35,10 +35,22 @@ If you wish to install anything except the latest packages, you may set one of
 
 to the appropriate version.
 
+It will install 32 bit version alongside 64bit version on 64bit systems.
+
 Usage
 -----
 
-Just include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, `vcruntime::vc11`, `vcruntime::vc12`, or `vcruntime::vc14` in your node's `run_list`:
+Include the default recipe to install all supported versions:
+```json
+{
+  "name": "my_node",
+  "run_list": [
+    "recipe[vcruntime]"
+  ]
+}
+```
+
+Include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, `vcruntime::vc11`, `vcruntime::vc12`, or `vcruntime::vc14` in your node's `run_list` to install specific versions only:
 
 ```json
 {

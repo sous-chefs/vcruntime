@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 0.2.6:
+
+* install 32 bit by default on 32 bit systems
+
 ## 0.2.5:
 
 * fixed typos and incorrect naming of VC versions
