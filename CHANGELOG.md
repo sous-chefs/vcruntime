@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 0.2.3:
+
+* Added VS 2015 Runtime
+
 ## 0.2.2:
 
 * Added VS 2005 Runtime
