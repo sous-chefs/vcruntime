@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 0.2.5:
+
+* fixed typos and incorrect naming of VC versions
+
 ## 0.2.4:
 
 * Added VS 2013 Runtime

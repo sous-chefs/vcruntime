@@ -1,7 +1,7 @@
 #
 # Author:: Yvo van Doorn (<yvo@chef.io>)
 # Cookbook Name:: vcruntime
-# Recipe:: vc13
+# Recipe:: vc11
 #
 # Copyright 2013-2015, Chef Software, Inc.
 #
@@ -20,16 +20,16 @@
 
 case node['kernel']['machine']
 when 'x86_64'
-  windows_package node['vcruntime']['vc13']['x64'][node['vcruntime']['vc13']['version']]['name'] do
-    checksum node['vcruntime']['vc13']['x64'][node['vcruntime']['vc13']['version']]['sha256sum']
-    source node['vcruntime']['vc13']['x64'][node['vcruntime']['vc13']['version']]['url']
+  windows_package node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name'] do
+    checksum node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum']
+    source node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['url']
     installer_type :custom
     options '/q'
   end
 when /i[3-6]86/
-  windows_package node['vcruntime']['vc13']['x86'][node['vcruntime']['vc13']['version']]['name'] do
-    checksum node['vcruntime']['vc13']['x86'][node['vcruntime']['vc13']['version']]['sha256sum']
-    source node['vcruntime']['vc13']['x86'][node['vcruntime']['vc13']['version']]['url']
+  windows_package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
+    checksum node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum']
+    source node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['url']
     installer_type :custom
     options '/q'
   end

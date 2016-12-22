@@ -4,7 +4,7 @@ Microsoft Visual C++ Runtime Cookbook
 [![Cookbook Version](https://img.shields.io/cookbook/v/vcruntime.svg)](https://supermarket.chef.io/cookbooks/vcruntime)
 
 
-Installs Microsoft Visual C++ runtime version 6 (2005), 9 (2008), 10 (2010) or 12 (2012) on Windows.
+Installs Microsoft Visual C++ runtime version 6 (2005), 9 (2008), 10 (2010), 11 (2012), 12 (2013) or 14 (2015) on Windows.
 
 Requirements
 ------------
@@ -29,20 +29,22 @@ If you wish to install anything except the latest packages, you may set one of
 * ```node['vcruntime']['vc6']['version']```
 * ```node['vcruntime']['vc9']['version']```
 * ```node['vcruntime']['vc10']['version']```
+* ```node['vcruntime']['vc11']['version']```
 * ```node['vcruntime']['vc12']['version']```
+* ```node['vcruntime']['vc14']['version']```
 
 to the appropriate version.
 
 Usage
 -----
 
-Just include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, or `vcruntime::vc12` in your node's `run_list`:
+Just include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, `vcruntime::vc11`, `vcruntime::vc12`, or `vcruntime::vc14` in your node's `run_list`:
 
 ```json
 {
   "name": "my_node",
   "run_list": [
-    "recipe[vcruntime::vc9]"
+    "recipe[vcruntime::vc6]"
   ]
 }
 ```
