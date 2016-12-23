@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 0.2.11:
+
+* fixed bug with names not matching registry causing install to run everytime client ran.
+
 ## 0.2.6:
 
 * install 32 bit by default on 32 bit systems
