@@ -20,20 +20,20 @@
 
 case node['kernel']['machine']
 when 'x86_64'
-  package node['vcruntime']['vc6']['x64'][node['vcruntime']['vc6']['version']]['name'] do
+  windows_package node['vcruntime']['vc6']['x64'][node['vcruntime']['vc6']['version']]['name'] do
     checksum node['vcruntime']['vc6']['x64'][node['vcruntime']['vc6']['version']]['sha256sum']
     source node['vcruntime']['vc6']['x64'][node['vcruntime']['vc6']['version']]['url']
     installer_type :custom
     options '/q'
   end
-  package node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['name'] do
+  windows_package node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['name'] do
     checksum node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['sha256sum']
     source node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['url']
     installer_type :custom
     options '/q'
   end
 when /i[3-6]86/
-  package node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['name'] do
+  windows_package node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['name'] do
     checksum node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['sha256sum']
     source node['vcruntime']['vc6']['x86'][node['vcruntime']['vc6']['version']]['url']
     installer_type :custom
