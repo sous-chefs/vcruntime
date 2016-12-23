@@ -10,7 +10,7 @@ version          '0.2.9'
   supports os
 end
 
-depends 'windows'
+#depends 'windows'
 
 provides 'vcruntime::vc6'
 provides 'vcruntime::vc9'
