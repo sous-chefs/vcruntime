@@ -40,9 +40,9 @@ default['vcruntime']['vc11']['x64']['11.0.60610.1']['name']      = 'Microsoft Vi
 
 default['vcruntime']['vc11']['x86']['11.0.61030']['url']       = 'http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe'
 default['vcruntime']['vc11']['x86']['11.0.61030']['sha256sum'] = 'b924ad8062eaf4e70437c8be50fa612162795ff0839479546ce907ffa8d6e386'
-default['vcruntime']['vc11']['x86']['11.0.61030']['name']      = 'Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030'
+default['vcruntime']['vc11']['x86']['11.0.61030']['name']      = 'Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030'
 default['vcruntime']['vc11']['x64']['11.0.61030']['url']       = 'http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe'
 default['vcruntime']['vc11']['x64']['11.0.61030']['sha256sum'] = '681be3e5ba9fd3da02c09d7e565adfa078640ed66a0d58583efad2c1e3cc4064'
-default['vcruntime']['vc11']['x64']['11.0.61030']['name']      = 'Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030'
+default['vcruntime']['vc11']['x64']['11.0.61030']['name']      = 'Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030'
 
 default['vcruntime']['vc11']['version'] = '11.0.61030'
