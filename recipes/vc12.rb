@@ -17,26 +17,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-case node['kernel']['machine']
-when 'x86_64'
-  windows_package node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['name'] do
-    checksum node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['sha256sum']
-    source node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['url']
-    installer_type :custom
-    options '/q'
-  end
-  windows_package node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['name'] do
-    checksum node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['sha256sum']
-    source node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['url']
-    installer_type :custom
-    options '/q'
-  end
-when /i[3-6]86/
-  windows_package node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['name'] do
-    checksum node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['sha256sum']
-    source node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['url']
-    installer_type :custom
-    options '/q'
-  end
+case node['platform_family']
+when "windows"
+	case node['kernel']['machine']
+	when 'x86_64'
+	  package node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['name'] do
+		checksum node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['sha256sum']
+		source node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['url']
+		installer_type :custom
+		options '/q'
+	  end
+	  _package node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['name'] do
+		checksum node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['sha256sum']
+		source node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['url']
+		installer_type :custom
+		options '/q'
+	  end
+	when /i[3-6]86/
+	  package node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['name'] do
+		checksum node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['sha256sum']
+		source node['vcruntime']['vc12']['x86'][node['vcruntime']['vc12']['version']]['url']
+		installer_type :custom
+		options '/q'
+	  end
+	end
 end
