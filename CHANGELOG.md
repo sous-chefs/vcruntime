@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of vcruntime.
 
-## 0.2.13:
+## 0.2.14:
 
 * Converted to use new package handler instead of deprecated windows_package handler.
 * Added case to run only on windows.
