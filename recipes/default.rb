@@ -18,8 +18,6 @@
 # limitations under the License.
 #
 
-puts installed_packages
-
 include_recipe 'vcruntime::vc6'
 include_recipe 'vcruntime::vc9'
 include_recipe 'vcruntime::vc10'

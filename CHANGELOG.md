@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 0.2.12:
+
+* removed Debug puts forgotten.
+
 ## 0.2.11:
 
 * fixed bug with names not matching registry causing install to run everytime client ran.
