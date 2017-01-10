@@ -2,37 +2,18 @@
 
 This file is used to list changes made in each version of vcruntime.
 
-## 0.2.14:
+## 1.0.0:
 
+* Updated changelog
+* removed provides (obsolete) & ran rubocop/cookstyle on cookbook
 * Converted to use new package handler instead of deprecated windows_package handler.
 * Added case to run only on windows.
-
-## 0.2.12:
-
 * removed Debug puts forgotten.
-
-## 0.2.11:
-
 * fixed bug with names not matching registry causing install to run everytime client ran.
-
-## 0.2.6:
-
 * install 32 bit by default on 64 bit systems
-
-## 0.2.5:
-
 * fixed typos and incorrect naming of VC versions
-
-## 0.2.4:
-
 * Added VS 2013 Runtime
-
-## 0.2.3:
-
 * Added VS 2015 Runtime
-
-## 0.2.2:
-
 * Added VS 2005 Runtime
 
 ## 0.2.0:
