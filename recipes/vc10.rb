@@ -18,27 +18,27 @@
 # limitations under the License.
 #
 case node['platform_family']
-when "windows"
-	case node['kernel']['machine']
-	when 'x86_64'
-	  package node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['name'] do
-		checksum node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['sha256sum']
-		source node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['url']
-		installer_type :custom
-		options '/q'
-	  end
-	  package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
-		checksum node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum']
-		source node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['url']
-		installer_type :custom
-		options '/q'
-	  end
-	when /i[3-6]86/
-	  package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
-		checksum node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum']
-		source node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['url']
-		installer_type :custom
-		options '/q'
-	  end
-	end
+when 'windows'
+  case node['kernel']['machine']
+  when 'x86_64'
+    package node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['name'] do
+      checksum node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['sha256sum']
+      source node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['url']
+      installer_type :custom
+      options '/q'
+    end
+    package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
+      checksum node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum']
+      source node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['url']
+      installer_type :custom
+      options '/q'
+    end
+  when /i[3-6]86/
+    package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
+      checksum node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum']
+      source node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['url']
+      installer_type :custom
+      options '/q'
+    end
+  end
 end

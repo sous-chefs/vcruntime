@@ -4,18 +4,11 @@ maintainer_email 'yvo@chef.io'
 license          'Apache 2.0'
 description      'Installs Microsoft Visual C++ Runtimes'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.2.14'
+version          '0.2.15'
 
 %w( windows ).each do |os|
   supports os
 end
-
-provides 'vcruntime::vc6'
-provides 'vcruntime::vc9'
-provides 'vcruntime::vc10'
-provides 'vcruntime::vc11'
-provides 'vcruntime::vc12'
-provides 'vcruntime::vc14'
 
 recipe	'vcruntime::vc6', 'Visual C++ 2005 runtimes'
 recipe	'vcruntime::vc9', 'Visual C++ 2008 runtimes'

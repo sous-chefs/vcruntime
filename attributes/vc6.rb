@@ -24,4 +24,4 @@ default['vcruntime']['vc6']['x64']['6.0.2900.2180']['url']       = 'https://down
 default['vcruntime']['vc6']['x64']['6.0.2900.2180']['sha256sum'] = '0551a61c85b718e1fa015b0c3e3f4c4eea0637055536c00e7969286b4fa663e0'
 default['vcruntime']['vc6']['x64']['6.0.2900.2180']['name']      = 'Microsoft Visual C++ 2005 Redistributable (x64)'
 
-default['vcruntime']['vc6']['version']  = '6.0.2900.2180'
+default['vcruntime']['vc6']['version'] = '6.0.2900.2180'
