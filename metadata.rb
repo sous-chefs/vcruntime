@@ -6,9 +6,7 @@ description      'Installs Microsoft Visual C++ Runtimes'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.2.16'
 
-%w( windows ).each do |os|
-  supports os
-end
+supports 'windows'
 
 recipe	'vcruntime::vc6', 'Visual C++ 2005 runtimes'
 recipe	'vcruntime::vc9', 'Visual C++ 2008 runtimes'
