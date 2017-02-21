@@ -15,5 +15,6 @@ recipe	'vcruntime::vc11', 'Visual C++ 2012 runtimes'
 recipe	'vcruntime::vc12', 'Visual C++ 2013 runtimes'
 recipe	'vcruntime::vc14', 'Visual C++ 2015 runtimes'
 
-source_url 'https://github.com/chef-windows/vcruntime' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-windows/vcruntime/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-windows/vcruntime'
+issues_url 'https://github.com/chef-windows/vcruntime/issues'
+chef_version '>= 12.6'
