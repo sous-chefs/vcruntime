@@ -1,8 +1,8 @@
 #
 # Author:: Julian C. Dunn (<jdunn@chef.io>)
-# Cookbook Name:: vcruntime
+# Cookbook:: vcruntime
 # Attributes:: vc6
-# Copyright 2014-2015, Chef Software, Inc.
+# Copyright:: 2014-2017, Chef Software, Inc.
 # License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
