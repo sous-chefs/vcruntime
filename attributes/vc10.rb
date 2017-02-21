@@ -1,7 +1,7 @@
 #
 # Author:: Julian C. Dunn (<jdunn@chef.io>)
 # Cookbook Name:: vcruntime
-# Attributes:: vc9
+# Attributes:: vc10
 # Copyright 2014-2015, Chef Software, Inc.
 # License:: Apache License, Version 2.0
 #
@@ -26,9 +26,9 @@ default['vcruntime']['vc10']['x64']['10.0.30319']['name']      = 'Microsoft Visu
 
 default['vcruntime']['vc10']['x86']['10.0.40219']['url']       = 'http://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe'
 default['vcruntime']['vc10']['x86']['10.0.40219']['sha256sum'] = '66b797b3b4f99488f53c2b676610dfe9868984c779536891a8d8f73ee214bc4b'
-default['vcruntime']['vc10']['x86']['10.0.40219']['name']      = 'Microsoft Visual C++ 2010 x86 Redistributable - 10.0.40219'
+default['vcruntime']['vc10']['x86']['10.0.40219']['name']      = 'Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219'
 default['vcruntime']['vc10']['x64']['10.0.40219']['url']       = 'http://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe'
 default['vcruntime']['vc10']['x64']['10.0.40219']['sha256sum'] = 'c6cd2d3f0b11dc2a604ffdc4dd97861a83b77e21709ba71b962a47759c93f4c8'
-default['vcruntime']['vc10']['x64']['10.0.40219']['name']      = 'Microsoft Visual C++ 2010 x64 Redistributable - 10.0.40219'
+default['vcruntime']['vc10']['x64']['10.0.40219']['name']      = 'Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219'
 
 default['vcruntime']['vc10']['version'] = '10.0.40219'

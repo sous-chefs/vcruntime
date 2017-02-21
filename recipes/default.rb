@@ -17,3 +17,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+case node['platform_family']
+when 'windows'
+  include_recipe 'vcruntime::vc6'
+  include_recipe 'vcruntime::vc9'
+  include_recipe 'vcruntime::vc10'
+  include_recipe 'vcruntime::vc11'
+  include_recipe 'vcruntime::vc12'
+  include_recipe 'vcruntime::vc14'
+end
