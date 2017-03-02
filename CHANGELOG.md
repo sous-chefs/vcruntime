@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 1.0.1 (2017-03-02)
+
+- Update testing and documentation boilerplate
+- Test with Local Delivery instead of Rake
+- Add basic Chefspec testing of a converge
+- Add Travis Badge to the readme
+
 ## 1.0.0:
 
 - Converted to use new package resource instead of deprecated windows_package handler. This requires Chef 12.6 or later to use this cookbook now
