@@ -1,6 +1,6 @@
 # Microsoft Visual C++ Runtime Cookbook
 
-[![Travis Status](https://travis-ci.org/chef-cookbooks/vcruntime.svg?branch=master)](http://travis-ci.org/chef-cookbooks/vcruntime) [![Appveyer status](https://ci.appveyor.com/api/projects/status/0urqqgutu87gvo55?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks/vcruntime) [![Cookbook Version](https://img.shields.io/cookbook/v/vcruntime.svg)](https://supermarket.chef.io/cookbooks/vcruntime)
+[![Appveyer status](https://ci.appveyor.com/api/projects/status/0urqqgutu87gvo55?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks/vcruntime) [![Cookbook Version](https://img.shields.io/cookbook/v/vcruntime.svg)](https://supermarket.chef.io/cookbooks/vcruntime)
 
 Installs Microsoft Visual C++ runtime version 6 (2005), 9 (2008), 10 (2010), 11 (2012), 12 (2013) or 14 (2015) on Windows.
 
