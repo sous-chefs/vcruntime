@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 1.0.3 (2017-05-01)
+
+- Update VC12 version information.
+
 ## 1.0.2 (2017-03-08)
 
 - Add integration testing on Appveyer and remove Travis CI. Swap the readme badges
