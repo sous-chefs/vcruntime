@@ -24,4 +24,11 @@ default['vcruntime']['vc12']['x64']['12.0.30501']['url']       = 'https://downlo
 default['vcruntime']['vc12']['x64']['12.0.30501']['sha256sum'] = 'e554425243e3e8ca1cd5fe550db41e6fa58a007c74fad400274b128452f38fb8'
 default['vcruntime']['vc12']['x64']['12.0.30501']['name']      = 'Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005'
 
-default['vcruntime']['vc12']['version'] = '12.0.30501'
+default['vcruntime']['vc12']['x86']['12.0.40660']['url']       = 'https://download.microsoft.com/download/0/5/6/056DCDA9-D667-4E27-8001-8A0C6971D6B1/vcredist_x86.exe'
+default['vcruntime']['vc12']['x86']['12.0.40660']['sha256sum'] = '89f4e593ea5541d1c53f983923124f9fd061a1c0c967339109e375c661573c17'
+default['vcruntime']['vc12']['x86']['12.0.40660']['name']      = 'Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660'
+default['vcruntime']['vc12']['x64']['12.0.40660']['url']       = 'https://download.microsoft.com/download/0/5/6/056DCDA9-D667-4E27-8001-8A0C6971D6B1/vcredist_x64.exe'
+default['vcruntime']['vc12']['x64']['12.0.40660']['sha256sum'] = '20e2645b7cd5873b1fa3462b99a665ac8d6e14aae83ded9d875fea35ffdd7d7e'
+default['vcruntime']['vc12']['x64']['12.0.40660']['name']      = 'Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660'
+
+default['vcruntime']['vc12']['version'] = '12.0.40660'
