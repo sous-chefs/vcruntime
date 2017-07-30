@@ -26,3 +26,4 @@ suites:
       - recipe[vcruntime::vc11]
       - recipe[vcruntime::vc12]
       - recipe[vcruntime::vc14]
+      - recipe[vcruntime::vc15]

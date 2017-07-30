@@ -25,4 +25,5 @@ when 'windows'
   include_recipe 'vcruntime::vc11'
   include_recipe 'vcruntime::vc12'
   include_recipe 'vcruntime::vc14'
+  include_recipe 'vcruntime::vc15'
 end
