@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 1.1.0 (2017-07-31)
+
+- Add VC15
+
 ## 1.0.3 (2017-05-01)
 
 - Update VC12 version information.
