@@ -1,3 +1,4 @@
+# rubocop: disable Lint/ParenthesesAsGroupedExpression:
 #
 # Author:: Yvo van Doorn (<yvo@chef.io>)
 # Cookbook:: vcruntime
@@ -25,12 +26,20 @@ when 'windows'
       checksum node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum']
       source node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['url']
       installer_type :custom
+      remote_file_attributes ({
+        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name']}.exe",
+        checksum: node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum'],
+      })
       options '/q'
     end
     package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
       checksum node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum']
       source node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['url']
       installer_type :custom
+      remote_file_attributes ({
+        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
+        checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
+      })
       options '/q'
     end
   when /i[3-6]86/
@@ -38,6 +47,10 @@ when 'windows'
       checksum node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum']
       source node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['url']
       installer_type :custom
+      remote_file_attributes ({
+        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
+        checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
+      })
       options '/q'
     end
   end
