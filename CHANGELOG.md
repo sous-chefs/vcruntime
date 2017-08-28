@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 1.1.1 (2017-08-28)
+
+- Fixed bug where download happens on every run due to same name #11
+- Fixed issue where VCRuntime 2017 is in-place upgrade of 2015 & cannot be installed together #15
+
 ## 1.1.0 (2017-07-31)
 
 - Add VC15
