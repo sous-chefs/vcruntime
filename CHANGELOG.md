@@ -2,6 +2,12 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 1.2.0 (2018-07-10)
+
+- Remove stove gem from the Gemfile
+- Update VC15 to latest version
+- Remove appveyor testing for VC14 since we can't test both VC14 and VC15
+
 ## 1.1.1 (2017-08-28)
 
 - Fixed bug where download happens on every run due to same name #11
