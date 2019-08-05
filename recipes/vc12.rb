@@ -18,8 +18,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-case node['platform_family']
-when 'windows'
+
+if platform?('windows')
   case node['kernel']['machine']
   when 'x86_64'
     package node['vcruntime']['vc12']['x64'][node['vcruntime']['vc12']['version']]['name'] do
