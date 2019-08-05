@@ -58,15 +58,9 @@ Include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, `vcruntime::vc11`
 }
 ```
 
-## License and Authors
+## License
 
-**Author:** Yvo Van Doorn ([yvo@chef.io](mailto:yvo@chef.io))
-
-**Author:** Dan Robinson ([drobinson@chef.io](mailto:drobinson@chef.io))
-
-**Author:** Julian Dunn ([jdunn@chef.io](mailto:jdunn@chef.io))
-
-**Copyright:** 2013-2017, Chef Software, Inc.
+**Copyright:** 2013-2019, Chef Software, Inc.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
