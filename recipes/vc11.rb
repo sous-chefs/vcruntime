@@ -1,4 +1,3 @@
-# rubocop: disable Lint/ParenthesesAsGroupedExpression:
 #
 # Author:: Yvo van Doorn (<yvo@chef.io>)
 # Cookbook:: vcruntime

@@ -1,2 +1,4 @@
 Layout/EndOfLine:
   EnforcedStyle: lf
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
