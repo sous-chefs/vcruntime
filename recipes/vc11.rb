@@ -3,7 +3,7 @@
 # Cookbook:: vcruntime
 # Recipe:: vc11
 #
-# Copyright:: 2013-2017, Chef Software, Inc.
+# Copyright:: 2013-2019, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,20 +21,22 @@
 if platform?('windows')
   case node['kernel']['machine']
   when 'x86_64'
-    package node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name'] do
+    windows_package node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name'] do
       checksum node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum']
       source node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['url']
       installer_type :custom
+      returns [0, 3010]
       remote_file_attributes ({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum'],
       })
       options '/q'
     end
-    package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
+    windows_package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
       checksum node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum']
       source node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['url']
       installer_type :custom
+      returns [0, 3010]
       remote_file_attributes ({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
@@ -42,10 +44,11 @@ if platform?('windows')
       options '/q'
     end
   when /i[3-6]86/
-    package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
+    windows_package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
       checksum node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum']
       source node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['url']
       installer_type :custom
+      returns [0, 3010]
       remote_file_attributes ({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
