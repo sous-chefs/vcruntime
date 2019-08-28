@@ -3,7 +3,7 @@ maintainer       'Chef Software, Inc.'
 maintainer_email 'cookbooks@chef.io'
 license          'Apache-2.0'
 description      'Installs Microsoft Visual C++ Runtimes'
-version          '1.2.0'
+version          '1.2.1'
 
 supports 'windows'
 

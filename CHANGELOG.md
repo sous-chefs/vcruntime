@@ -2,6 +2,17 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 1.2.1 (2019-08-28)
+
+- Remove recipe descriptions from metadata.rb - [@tas50](https://github.com/tas50)
+- Enable all foodcritic rules on this repo - [@tas50](https://github.com/tas50)
+- Remove the gating around chef_version in metadata.rb - [@tas50](https://github.com/tas50)
+- Remove the empty default attributes file - [@tas50](https://github.com/tas50)
+- Simplify windows platform checks - [@tas50](https://github.com/tas50)
+- Remove old authors from the readme - [@tas50](https://github.com/tas50)
+- Don't treat return code 3010 as a failure - [@tas50](https://github.com/tas50)
+- Remove old long_description metadata - [@tas50](https://github.com/tas50)
+
 ## 1.2.0 (2018-07-10)
 
 - Remove stove gem from the Gemfile
