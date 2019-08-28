@@ -21,20 +21,22 @@
 if platform?('windows')
   case node['kernel']['machine']
   when 'x86_64'
-    package node['vcruntime']['vc15']['x64'][node['vcruntime']['vc15']['version']]['name'] do
+    windows_package node['vcruntime']['vc15']['x64'][node['vcruntime']['vc15']['version']]['name'] do
       checksum node['vcruntime']['vc15']['x64'][node['vcruntime']['vc15']['version']]['sha256sum']
       source node['vcruntime']['vc15']['x64'][node['vcruntime']['vc15']['version']]['url']
       installer_type :custom
+      returns [0, 3010]
       remote_file_attributes ({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc15']['x64'][node['vcruntime']['vc15']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc15']['x64'][node['vcruntime']['vc15']['version']]['sha256sum'],
       })
       options '/q'
     end
-    package node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['name'] do
+    windows_package node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['name'] do
       checksum node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['sha256sum']
       source node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['url']
       installer_type :custom
+      returns [0, 3010]
       remote_file_attributes ({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['sha256sum'],
@@ -42,10 +44,11 @@ if platform?('windows')
       options '/q'
     end
   when /i[3-6]86/
-    package node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['name'] do
+    windows_package node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['name'] do
       checksum node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['sha256sum']
       source node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['url']
       installer_type :custom
+      returns [0, 3010]
       remote_file_attributes ({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc15']['x86'][node['vcruntime']['vc15']['version']]['sha256sum'],

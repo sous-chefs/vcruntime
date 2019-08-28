@@ -11,6 +11,8 @@ Installs Microsoft Visual C++ runtime version 6 (2005), 9 (2008), 10 (2010), 11 
 - Microsoft Windows 2008 R2
 - Microsoft Windows 2012
 - Microsoft Windows 2012 R2
+- Microsoft Windows 2016
+- Microsoft Windows 2019
 
 ### Chef
 
