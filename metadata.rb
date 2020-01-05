@@ -9,4 +9,4 @@ supports 'windows'
 
 source_url 'https://github.com/chef-windows/vcruntime'
 issues_url 'https://github.com/chef-windows/vcruntime/issues'
-chef_version '>= 12.6'
+chef_version '>= 12.15'
