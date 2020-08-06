@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## 2.0.0 (2020-08-06)
+
+- Correct vc10 and vc12 name properties - [@derekgroh](https://github.com/derekgroh)
+- Correct vc9 download links - [@derekgroh](https://github.com/derekgroh)
+- consolidate vc15 recipe into vc14 to match Microsoft package version, this allows the `windows_package` resource to handle upgrades without additional logic - [@derekgroh](https://github.com/derekgroh)
+- add Inspec testing - [@derekgroh](https://github.com/derekgroh)
+
 ## 1.2.1 (2019-08-28)
 
 - Remove recipe descriptions from metadata.rb - [@tas50](https://github.com/tas50)
