@@ -24,5 +24,5 @@ if platform?('windows')
   include_recipe 'vcruntime::vc10'
   include_recipe 'vcruntime::vc11'
   include_recipe 'vcruntime::vc12'
-  include_recipe 'vcruntime::vc15'
+  include_recipe 'vcruntime::vc14'
 end
