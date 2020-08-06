@@ -49,7 +49,7 @@ Versions in the same recipe replace prior versions except for Microsoft Visual C
 | Microsoft Visual C++ 2013 | 12.0.0501<br>12.0.0660.0 |
 | Microsoft Visual C++ 2015 | 14.0.3026.0<br>14.0.4123.0<br>14.0.4212.0<br>14.0.24215 |
 | Microsoft Visual C++ 2017 | 14.0.25017.0<br>14.4.26429.4 |
-| Microsoft Visual C++ 2015-2019 | 14.26.28720.3 |
+| Microsoft Visual C++ 2015-2019 | 14.27.29016.0 |
 
 ## Usage
 

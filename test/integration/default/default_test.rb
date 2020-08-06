@@ -21,7 +21,7 @@ control 'Microsoft Visual C++ Redistributable (x86)' do
                'Microsoft Visual C++ 2015 x86 Additional Runtime - 14.0.24215' => '14.0.24215',
                'Microsoft Visual C++ 2017 Redistributable (x86) - 14.10.25017' => '14.10.25017.0',
                'Microsoft Visual C++ 2017 Redistributable (x86) - 14.14.26429' => '14.14.26429.4',
-               'Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.26.28720' => '14.26.28720.3' }
+               'Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.27.29016' => '14.27.29016.0' }
   describe.one do
     packages.each do |name, version|
       describe package(name.to_s) do
@@ -50,7 +50,7 @@ control 'Microsoft Visual C++ Redistributable (x64)' do
                'Microsoft Visual C++ 2015 x64 Additional Runtime - 14.0.24215' => '14.0.24215',
                'Microsoft Visual C++ 2017 Redistributable (x64) - 14.10.25017' => '14.10.25017.0',
                'Microsoft Visual C++ 2017 Redistributable (x64) - 14.14.26429' => '14.14.26429.4',
-               'Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.26.28720' => '14.26.28720.3' }
+               'Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.27.29016' => '14.27.29016.0' }
   describe.one do
     packages.each do |name, version|
       describe package(name.to_s) do
