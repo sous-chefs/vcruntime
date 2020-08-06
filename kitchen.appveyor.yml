@@ -22,4 +22,4 @@ suites:
       - recipe[vcruntime::vc10]
       - recipe[vcruntime::vc11]
       - recipe[vcruntime::vc12]
-      - recipe[vcruntime::vc15]
+      - recipe[vcruntime::vc14]
