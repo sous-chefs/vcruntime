@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Sous Chefs Adoption
 - Update Changelog to Sous Chefs
+- Remove Appveyor and update exec kitchen config
 
 ## 2.0.0 (2020-08-06)
 
