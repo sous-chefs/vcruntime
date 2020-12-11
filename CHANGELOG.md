@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update vc14 to 14.28.29325.2
 - Update to use Sous Chefs GH workflow
 
+### Fixed
+
+- MDL Fixes
+
 ## 2.0.0 (2020-08-06)
 
 - Correct vc10 and vc12 name properties - [@derekgroh](https://github.com/derekgroh)
@@ -63,7 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add basic Chefspec testing of a converge
 - Add Travis Badge to the readme
 
-## 1.0.0:
+## 1.0.0
 
 - Converted to use new package resource instead of deprecated windows_package handler. This requires Chef 12.6 or later to use this cookbook now
 - Added VS 2013 Runtime
@@ -77,15 +81,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - fixed typos and incorrect naming of VC versions
 - Added Test Kitchen config
 
-## 0.2.0:
+## 0.2.0
 
 - Refactor to allow the installation of older versions of the Visual C++ Runtime.
 - Normalize top-level attribute namespace to 'vcruntime'
 
-## 0.1.6:
+## 0.1.6
 
 - Added VS 2012 Runtime
 
-## 0.1.0:
+## 0.1.0
 
 - Initial release of vcruntime
