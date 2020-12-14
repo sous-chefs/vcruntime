@@ -19,9 +19,13 @@ platforms:
   - name: windows-2016
     driver_config:
       box: tas50/windows_2016
+      customize:
+        memory: 3072
   - name: windows-2019
     driver_config:
       box: tas50/windows_2019
+      customize:
+        memory: 3072
 
 suites:
   - name: all
@@ -34,4 +38,40 @@ suites:
       - recipe[vcruntime::vc14]
     verifier:
       inspec_tests:
-        - test/integration
+        - test/integration/default
+  - name: vc6
+    run_list:
+      - recipe[vcruntime::vc6]
+    verifier:
+      inspec_tests:
+        - test/integration/vc6
+  - name: vc9
+    run_list:
+      - recipe[vcruntime::vc9]
+    verifier:
+      inspec_tests:
+        - test/integration/vc9
+  - name: vc10
+    run_list:
+      - recipe[vcruntime::vc10]
+    verifier:
+      inspec_tests:
+        - test/integration/vc10
+  - name: vc11
+    run_list:
+      - recipe[vcruntime::vc11]
+    verifier:
+      inspec_tests:
+        - test/integration/vc11
+  - name: vc12
+    run_list:
+      - recipe[vcruntime::vc12]
+    verifier:
+      inspec_tests:
+        - test/integration/vc12
+  - name: vc14
+    run_list:
+      - recipe[vcruntime::vc14]
+    verifier:
+      inspec_tests:
+        - test/integration/vc14
