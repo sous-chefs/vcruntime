@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## [Unreleased]
+
+- Add GitHub Actions CI/CD. [@derekGroh](https://github.com/derekgroh)
+- vc14 updated to use version `14.28.29325.2` [@derekGroh](https://github.com/derekgroh)
+
 ## 2.0.0 (2020-08-06)
 
 - Correct vc10 and vc12 name properties - [@derekgroh](https://github.com/derekgroh)
