@@ -26,7 +26,7 @@ if platform?('windows')
       source node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['url']
       installer_type :custom
       returns [0, 3010]
-      remote_file_attributes ({
+      remote_file_attributes({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['sha256sum'],
       })
@@ -37,7 +37,7 @@ if platform?('windows')
       source node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['url']
       installer_type :custom
       returns [0, 3010]
-      remote_file_attributes ({
+      remote_file_attributes({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum'],
       })
@@ -49,7 +49,7 @@ if platform?('windows')
       source node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['url']
       installer_type :custom
       returns [0, 3010]
-      remote_file_attributes ({
+      remote_file_attributes({
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum'],
       })
