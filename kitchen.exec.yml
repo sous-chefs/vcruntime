@@ -11,3 +11,4 @@ provisioner:
 
 platforms:
   - name: windows-2016
+  - name: windows-2019

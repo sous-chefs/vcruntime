@@ -34,7 +34,7 @@ jobs:
       - name: Run Markdown Lint
         uses: actionshub/markdownlint@main
 
-  windows:
+  windows-2016:
     needs: [mdl, yamllint, delivery]
     runs-on: windows-2016
     strategy:
@@ -69,8 +69,39 @@ jobs:
           suite: ${{ matrix.suite }}
           os: ${{ matrix.os }}
 
+  windows-2019:
+    needs: [mdl, yamllint, delivery]
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        os:
+          - 'windows-2019'
+        suite:
+          - 'vc6'
+          - 'vc9'
+          - 'vc10'
+          - 'vc11'
+          - 'vc12'
+      fail-fast: false
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@master
+      - name: Install Chef
+        uses: actionshub/chef-install@main
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+      - name: Kitchen Exec
+        uses: actionshub/kitchen-dokken@main
+        env:
+          CHEF_LICENSE: accept-no-persist
+          KITCHEN_LOCAL_YAML: kitchen.exec.yml
+        with:
+          suite: ${{ matrix.suite }}
+          os: ${{ matrix.os }}
+
   final:
-    needs: [windows]
+    needs: [windows-2016, windows-2019]
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
