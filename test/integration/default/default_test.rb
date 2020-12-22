@@ -4,7 +4,7 @@
 # found at https://www.inspec.io/docs/reference/resources/
 
 control 'Microsoft Visual C++ Redistributable (x86)' do
-  packages = { 'Microsoft Visual C++ 2005 Redistributable (x86)' => '8.0.61000',
+  packages = { 'Microsoft Visual C++ 2005 Redistributable (x86)' => '8.0.61001',
                'Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022' => '9.0.21022',
                'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161' => '9.0.30729.6161',
                'Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319' => '10.0.30319',
