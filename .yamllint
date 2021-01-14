@@ -5,4 +5,3 @@ rules:
     max: 256
     level: warning
   document-start: disable
-  truthy: disable
