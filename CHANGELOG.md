@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+- Add GitHub Actions CI/CD. [@derekGroh](https://github.com/derekgroh)
+- vc14 updated to use version `14.28.29325.2` [@derekGroh](https://github.com/derekgroh)
+
 ### Changed
 
 - Sous Chefs Adoption
