@@ -70,5 +70,3 @@ default['vcruntime']['vc14']['x64']['14.28.29325.2']['sha256sum'] = 'b1a32c71a6b
 default['vcruntime']['vc14']['x64']['14.28.29325.2']['name']      = 'Microsoft Visual C++ 2019 Redistributable (x64) - 14.28.29325.2'
 
 default['vcruntime']['vc14']['version'] = '14.28.29325.2'
-
-default['vcruntime']['vc14']['version'] = '14.28.29325.2'
