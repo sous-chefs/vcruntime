@@ -2,24 +2,15 @@
 
 This file is used to list changes made in each version of vcruntime.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## Unreleased
 
 - Add GitHub Actions CI/CD. [@derekGroh](https://github.com/derekgroh)
 - vc14 updated to use version `14.28.29325.2` [@derekGroh](https://github.com/derekgroh)
-
-### Changed
-
 - Sous Chefs Adoption
 - Update Changelog to Sous Chefs
 - Remove Appveyor and update exec kitchen config
 - Update vc14 to 14.28.29325.2
 - Update to use Sous Chefs GH workflow
-
-### Fixed
-
 - MDL Fixes
 
 ## 2.0.0 (2020-08-06)
