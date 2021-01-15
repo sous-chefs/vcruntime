@@ -57,7 +57,7 @@ Versions in the same recipe replace prior versions except for Microsoft Visual C
 | Microsoft Visual C++ 2013 | 12.0.0501<br>12.0.0660.0 |
 | Microsoft Visual C++ 2015 | 14.0.3026.0<br>14.0.4123.0<br>14.0.4212.0<br>14.0.24215 |
 | Microsoft Visual C++ 2017 | 14.0.25017.0<br>14.4.26429.4 |
-| Microsoft Visual C++ 2015-2019 | 14.27.29016.0 |
+| Microsoft Visual C++ 2015-2019 | 14.28.29325.2 |
 
 ## Usage
 
@@ -72,7 +72,7 @@ Include the default recipe to install all supported versions:
 }
 ```
 
-Include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, `vcruntime::vc11`, `vcruntime::vc12`, or `vcruntime::vc14` in your node's `run_list` to install specific versions only:
+Include `vcruntime::vc6`, `vcruntime::vc9`, `vcruntime::vc10`, `vcruntime::vc11`, `vcruntime::vc12`, or `vcruntime::vc14` in your node's `run_list` to install specific versions only or `vcruntime::default` for all versions:
 
 ```json
 {
