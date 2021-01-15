@@ -4,6 +4,9 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- add norestart options to installers [@derekgroh](https://github.com/derekgroh)
+- add returns 1638 to `vc14` [@derekgroh](https://github.com/derekgroh)
+
 ## 2.1.0 - *2021-01-15*
 
 - Add GitHub Actions CI/CD. [@derekGroh](https://github.com/derekgroh)
