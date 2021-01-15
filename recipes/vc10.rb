@@ -30,7 +30,7 @@ if platform?('windows')
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc10']['x64'][node['vcruntime']['vc10']['version']]['sha256sum'],
       })
-      options '/q'
+      options '/q /norestart'
     end
     windows_package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
       checksum node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum']
@@ -41,7 +41,7 @@ if platform?('windows')
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum'],
       })
-      options '/q'
+      options '/q /norestart'
     end
   when /i[3-6]86/
     windows_package node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name'] do
@@ -53,7 +53,7 @@ if platform?('windows')
         path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['name']}.exe",
         checksum: node['vcruntime']['vc10']['x86'][node['vcruntime']['vc10']['version']]['sha256sum'],
       })
-      options '/q'
+      options '/q /norestart'
     end
   end
 end
