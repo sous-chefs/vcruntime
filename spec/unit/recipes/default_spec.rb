@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'default recipe on Windows 2012R2' do
-  let(:runner) { ChefSpec::ServerRunner.new(platform: 'windows', version: '2012R2') }
+  let(:runner) { ChefSpec::ServerRunner.new(platform: 'windows', version: '2019') }
   let(:chef_run) { runner.converge('vcruntime::default') }
 
   it 'converges successfully' do
