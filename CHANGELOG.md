@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## Unreleased
+
 ## 2.2.0 - *2021-01-16*
 
 - add norestart options to installers [@derekgroh](https://github.com/derekgroh)
