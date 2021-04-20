@@ -4,6 +4,8 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Update vc14 checksum for '14.28.29914.0' [@derekgroh](https://github.com/derekgroh)
+
 ## 2.2.0 - *2021-01-16*
 
 - add norestart options to installers [@derekgroh](https://github.com/derekgroh)

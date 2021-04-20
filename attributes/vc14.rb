@@ -62,11 +62,11 @@ default['vcruntime']['vc14']['x64']['14.14.26429.4']['sha256sum'] = '9abf3a13865
 default['vcruntime']['vc14']['x64']['14.14.26429.4']['name']      = 'Microsoft Visual C++ 2017 Redistributable (x64) - 14.14.26429'
 
 # Microsoft Visual C++ 2019 Redistributable
-default['vcruntime']['vc14']['x86']['14.28.29325.2']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x86.exe'
-default['vcruntime']['vc14']['x86']['14.28.29325.2']['sha256sum'] = '50a3e92ade4c2d8f310a2812d46322459104039b9deadbd7fdd483b5c697c0c8'
-default['vcruntime']['vc14']['x86']['14.28.29325.2']['name']      = 'Microsoft Visual C++ 2019 Redistributable (x86) - 14.28.29325.2'
-default['vcruntime']['vc14']['x64']['14.28.29325.2']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x64.exe'
-default['vcruntime']['vc14']['x64']['14.28.29325.2']['sha256sum'] = 'b1a32c71a6b7d5978904fb223763263ea5a7eb23b2c44a0d60e90d234ad99178'
-default['vcruntime']['vc14']['x64']['14.28.29325.2']['name']      = 'Microsoft Visual C++ 2019 Redistributable (x64) - 14.28.29325.2'
+default['vcruntime']['vc14']['x86']['14.28.29914.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x86.exe'
+default['vcruntime']['vc14']['x86']['14.28.29914.0']['sha256sum'] = '14563755ac24a874241935ef2c22c5fce973acb001f99e524145113b2dc638c1'
+default['vcruntime']['vc14']['x86']['14.28.29914.0']['name']      = 'Microsoft Visual C++ 2019 Redistributable (x86) - 14.28.29914.0'
+default['vcruntime']['vc14']['x64']['14.28.29914.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x64.exe'
+default['vcruntime']['vc14']['x64']['14.28.29914.0']['sha256sum'] = '52b196bbe9016488c735e7b41805b651261ffa5d7aa86eb6a1d0095be83687b2'
+default['vcruntime']['vc14']['x64']['14.28.29914.0']['name']      = 'Microsoft Visual C++ 2019 Redistributable (x64) - 14.28.29914.0'
 
-default['vcruntime']['vc14']['version'] = '14.28.29325.2'
+default['vcruntime']['vc14']['version'] = '14.28.29914.0'
