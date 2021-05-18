@@ -18,10 +18,10 @@
 # limitations under the License.
 
 default['vcruntime']['vc6']['x86']['6.0.2900.2180']['url']       = 'https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE'
-default['vcruntime']['vc6']['x86']['6.0.2900.2180']['sha256sum'] = '4ee4da0fe62d5fa1b5e80c6e6d88a4a2f8b3b140c35da51053d0d7b72a381d29'
+default['vcruntime']['vc6']['x86']['6.0.2900.2180']['sha256sum'] = '8648c5fc29c44b9112fe52f9a33f80e7fc42d10f3b5b42b2121542a13e44adfd'
 default['vcruntime']['vc6']['x86']['6.0.2900.2180']['name']      = 'Microsoft Visual C++ 2005 Redistributable'
 default['vcruntime']['vc6']['x64']['6.0.2900.2180']['url']       = 'https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE'
-default['vcruntime']['vc6']['x64']['6.0.2900.2180']['sha256sum'] = '0551a61c85b718e1fa015b0c3e3f4c4eea0637055536c00e7969286b4fa663e0'
+default['vcruntime']['vc6']['x64']['6.0.2900.2180']['sha256sum'] = '4487570bd86e2e1aac29db2a1d0a91eb63361fcaac570808eb327cd4e0e2240d'
 default['vcruntime']['vc6']['x64']['6.0.2900.2180']['name']      = 'Microsoft Visual C++ 2005 Redistributable (x64)'
 
 default['vcruntime']['vc6']['version'] = '6.0.2900.2180'
