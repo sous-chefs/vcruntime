@@ -4,6 +4,8 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Update vc6,vc9,vc10 checksums [@derekgroh](https://github.com/derekgroh)
+
 ## 2.2.1 - *2021-04-20*
 
 - Update vc14 checksum for '14.28.29914.0' [@derekgroh](https://github.com/derekgroh)

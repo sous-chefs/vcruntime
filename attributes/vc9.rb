@@ -25,10 +25,10 @@ default['vcruntime']['vc9']['x64']['9.0.21022.8']['sha256sum'] = 'baaaeddc17bcda
 default['vcruntime']['vc9']['x64']['9.0.21022.8']['name']      = 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022'
 
 default['vcruntime']['vc9']['x86']['9.0.30729.5677']['url']       = 'https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe'
-default['vcruntime']['vc9']['x86']['9.0.30729.5677']['sha256sum'] = '6b3e4c51c6c0e5f68c8a72b497445af3dbf976394cbb62aa23569065c28deeb6'
+default['vcruntime']['vc9']['x86']['9.0.30729.5677']['sha256sum'] = '8742bcbf24ef328a72d2a27b693cc7071e38d3bb4b9b44dec42aa3d2c8d61d92'
 default['vcruntime']['vc9']['x86']['9.0.30729.5677']['name']      = 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161'
 default['vcruntime']['vc9']['x64']['9.0.30729.5677']['url']       = 'https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe'
-default['vcruntime']['vc9']['x64']['9.0.30729.5677']['sha256sum'] = 'b811f2c047a3e828517c234bd4aa4883e1ec591d88fad21289ae68a6915a6665'
+default['vcruntime']['vc9']['x64']['9.0.30729.5677']['sha256sum'] = 'c5e273a4a16ab4d5471e91c7477719a2f45ddadb76c7f98a38fa5074a6838654'
 default['vcruntime']['vc9']['x64']['9.0.30729.5677']['name']      = 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161'
 
 default['vcruntime']['vc9']['version'] = '9.0.30729.5677'
