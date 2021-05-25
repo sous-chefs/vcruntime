@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of vcruntime.
 
-## Unreleased
+## 2.2.3 - *2021-05-25*
 
 - Update vc14 checksum for '14.29.30037.0' [@jhboricua](https://github.com/jhboricua)
 
