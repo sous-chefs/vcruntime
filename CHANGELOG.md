@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## Unreleased
+
 ## 2.2.4 - *2021-06-01*
 
 ## 2.2.3 - *2021-05-25*
