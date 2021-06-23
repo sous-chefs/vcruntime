@@ -58,7 +58,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Chef
         uses: actionshub/chef-install@main
-      - name: test-kitchen
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+      - name: Kitchen Exec
         uses: actionshub/test-kitchen@main
         env:
           CHEF_LICENSE: accept-no-persist
@@ -87,6 +89,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Chef
         uses: actionshub/chef-install@main
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: Kitchen Exec
         uses: actionshub/test-kitchen@main
         env:
