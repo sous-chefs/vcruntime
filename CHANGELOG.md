@@ -4,11 +4,15 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Standardise files with files in sous-chefs/repo-management
+
 ## 2.2.5 - *2021-06-23*
 
 - Update vc14 package_name [@derekgroh](https://github.com/derekgroh)
 
 ## 2.2.4 - *2021-06-01*
+
+- Standardise files with files in sous-chefs/repo-management
 
 ## 2.2.3 - *2021-05-25*
 
