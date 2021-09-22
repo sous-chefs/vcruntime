@@ -4,6 +4,8 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Update vc14 checksum for new release 14.29.30133.0 [@jhboricua](https://github.com/jhboricua)
+
 ## 2.2.6 - *2021-08-31*
 
 - Standardise files with files in sous-chefs/repo-management
