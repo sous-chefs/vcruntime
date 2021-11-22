@@ -62,11 +62,19 @@ default['vcruntime']['vc14']['x64']['14.14.26429.4']['sha256sum'] = '9abf3a13865
 default['vcruntime']['vc14']['x64']['14.14.26429.4']['name']      = 'Microsoft Visual C++ 2017 Redistributable (x64) - 14.14.26429'
 
 # Microsoft Visual C++ 2019 Redistributable
-default['vcruntime']['vc14']['x86']['14.29.30037.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x86.exe'
-default['vcruntime']['vc14']['x86']['14.29.30037.0']['sha256sum'] = '1acd8d5ea1cdc3eb2eb4c87be3ab28722d0825c15449e5c9ceef95d897de52fa'
-default['vcruntime']['vc14']['x86']['14.29.30037.0']['name']      = 'Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30133'
-default['vcruntime']['vc14']['x64']['14.29.30037.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x64.exe'
-default['vcruntime']['vc14']['x64']['14.29.30037.0']['sha256sum'] = '003063723b2131da23f40e2063fb79867bae275f7b5c099dbd1792e25845872b'
-default['vcruntime']['vc14']['x64']['14.29.30037.0']['name']      = 'Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.29.30133'
+default['vcruntime']['vc14']['x86']['14.29.30135.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x86.exe'
+default['vcruntime']['vc14']['x86']['14.29.30135.0']['sha256sum'] = '80c7969f4e05002a0cd820b746e0acb7406d4b85e52ef096707315b390927824'
+default['vcruntime']['vc14']['x86']['14.29.30135.0']['name']      = 'Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30135'
+default['vcruntime']['vc14']['x64']['14.29.30135.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x64.exe'
+default['vcruntime']['vc14']['x64']['14.29.30135.0']['sha256sum'] = '9b9dd72c27ab1db081de56bb7b73bee9a00f60d14ed8e6fde45dab3e619b5f04'
+default['vcruntime']['vc14']['x64']['14.29.30135.0']['name']      = 'Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.29.30135'
 
-default['vcruntime']['vc14']['version'] = '14.29.30037.0'
+# Microsoft Visual C++ 2022 Redistributable
+default['vcruntime']['vc14']['x86']['14.30.30704.0']['url']       = 'https://aka.ms/vs/17/release/vc_redist.x86.exe'
+default['vcruntime']['vc14']['x86']['14.30.30704.0']['sha256sum'] = 'ac75a82d873e6b6f98b1d293042380764d7d263c43438e50d564fa58c9f891c2'
+default['vcruntime']['vc14']['x86']['14.30.30704.0']['name']      = 'Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.30.30704'
+default['vcruntime']['vc14']['x64']['14.30.30704.0']['url']       = 'https://aka.ms/vs/17/release/vc_redist.x64.exe'
+default['vcruntime']['vc14']['x64']['14.30.30704.0']['sha256sum'] = 'a9f5d2eaf67bf0db0178b6552a71c523c707df0e2cc66c06bfbc08bdc53387e7'
+default['vcruntime']['vc14']['x64']['14.30.30704.0']['name']      = 'Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.30.30704'
+
+default['vcruntime']['vc14']['version'] = '14.30.30704.0'
