@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of vcruntime.
 
-## Unreleased
+## 2.2.9 - *2021-11-22*
 
 - Remove CircleCI and Dangerfile now the release system is taking care of this for us
 
