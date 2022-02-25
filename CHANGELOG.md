@@ -4,6 +4,13 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- resolved cookstyle error: .delivery/project.toml:2:8 convention: `Style/StringLiterals`
+- resolved cookstyle error: .delivery/project.toml:4:10 convention: `Style/StringLiterals`
+- resolved cookstyle error: .delivery/project.toml:5:13 convention: `Style/StringLiterals`
+- resolved cookstyle error: .delivery/project.toml:6:10 convention: `Style/StringLiterals`
+- resolved cookstyle error: .delivery/project.toml:7:9 convention: `Style/StringLiterals`
+- resolved cookstyle error: .delivery/project.toml:8:14 convention: `Style/StringLiterals`
+- resolved cookstyle error: .delivery/project.toml:9:11 convention: `Style/StringLiterals`
 ## 2.2.9 - *2021-11-22*
 
 - Remove CircleCI and Dangerfile now the release system is taking care of this for us
