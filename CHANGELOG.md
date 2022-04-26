@@ -4,6 +4,8 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Update vc12 and vc14 checksums for new releases of 2013, 2015-2019 and 2015-2022 runtimes [@jhboricua](https://github.com/jhboricua)
+
 ## 2.2.9 - *2021-11-22*
 
 - Remove CircleCI and Dangerfile now the release system is taking care of this for us
