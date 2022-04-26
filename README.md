@@ -54,11 +54,11 @@ Versions in the same recipe replace prior versions except for Microsoft Visual C
 | Microsoft Visual C++ 2008 | 9.0.1022<br>9.0.30729.6161 |
 | Microsoft Visual C++ 2010 | 10.0.0319<br>10.0.0219 |
 | Microsoft Visual C++ 2012 | 11.0.0727.1<br>11.0.1106.1<br>11.0.0610.1<br>11.0.1030.0 |
-| Microsoft Visual C++ 2013 | 12.0.0501<br>12.0.0660.0 |
+| Microsoft Visual C++ 2013 | 12.0.0501<br>12.0.0660.0 <br> 12.0.40664.0|
 | Microsoft Visual C++ 2015 | 14.0.3026.0<br>14.0.4123.0<br>14.0.4212.0<br>14.0.24215 |
 | Microsoft Visual C++ 2017 | 14.0.25017.0<br>14.4.26429.4 |
-| Microsoft Visual C++ 2015-2019 | 14.29.30135.0 |
-| Microsoft Visual C++ 2015-2022 | 14.30.30704.0 |
+| Microsoft Visual C++ 2015-2019 | 14.29.30135.0 <br> 14.29.30139.0 |
+| Microsoft Visual C++ 2015-2022 | 14.30.30704.0 <br> 14.31.31103.0 |
 
 ## Usage
 
