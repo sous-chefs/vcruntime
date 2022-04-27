@@ -8,16 +8,6 @@ name: ci
       - main
 
 jobs:
-  delivery:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-      - name: Run Chef Delivery
-        uses: actionshub/chef-delivery@main
-        env:
-          CHEF_LICENSE: accept-no-persist
-
   yamllint:
     runs-on: ubuntu-latest
     steps:
@@ -35,7 +25,7 @@ jobs:
         uses: actionshub/markdownlint@main
 
   integration-windows-2016:
-    needs: [mdl, yamllint, delivery]
+    needs: [mdl, yamllint]
     runs-on: windows-2016
     strategy:
       matrix:
@@ -70,7 +60,7 @@ jobs:
           os: ${{ matrix.os }}
 
   integration:
-    needs: [mdl, yamllint, delivery]
+    needs: [mdl, yamllint]
     runs-on: windows-latest
     strategy:
       matrix:
