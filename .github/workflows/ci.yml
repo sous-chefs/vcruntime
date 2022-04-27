@@ -72,6 +72,7 @@ jobs:
           - 'vc10'
           - 'vc11'
           - 'vc12'
+          - 'vc14'
       fail-fast: false
 
     steps:
