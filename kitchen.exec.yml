@@ -10,5 +10,4 @@ provisioner:
   deprecations_as_errors: true
 
 platforms:
-  - name: windows-2016
   - name: windows-2019
