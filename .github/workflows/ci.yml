@@ -8,6 +8,9 @@ name: ci
       - main
 
 jobs:
+  lint-unit:
+    uses: sous-chefs/.github/.github/workflows/lint-unit.yml@0.0.3
+
   yamllint:
     runs-on: ubuntu-latest
     steps:
@@ -25,7 +28,7 @@ jobs:
         uses: actionshub/markdownlint@main
 
   integration:
-    needs: [mdl, yamllint]
+    needs: [mdl, yamllint, lint-unit]
     runs-on: windows-latest
     strategy:
       matrix:
