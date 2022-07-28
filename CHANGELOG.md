@@ -4,6 +4,12 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Update vc12 and vc14 checksums for new releases of 2013, 2015-2019 and 2015-2022 runtimes [@jhboricua](https://github.com/jhboricua)
+- Removed deprecated Chef Delivery job [@jhboricua](https://github.com/jhboricua)
+- Removed deprecated Windows 2016 integration jobs [@jhboricua](https://github.com/jhboricua)
+- Removed stale workflow from github actions [@derekgroh](https://github.com/derekgroh)
+- Updated platforms to match supported versions [@derekgroh](https://github.com/derekgroh)
+
 ## 2.2.10 - *2022-05-01*
 
 - resolved cookstyle error: .delivery/project.toml:2:8 convention: `Style/StringLiterals`
@@ -13,6 +19,7 @@ This file is used to list changes made in each version of vcruntime.
 - resolved cookstyle error: .delivery/project.toml:7:9 convention: `Style/StringLiterals`
 - resolved cookstyle error: .delivery/project.toml:8:14 convention: `Style/StringLiterals`
 - resolved cookstyle error: .delivery/project.toml:9:11 convention: `Style/StringLiterals`
+
 ## 2.2.9 - *2021-11-22*
 
 - Remove CircleCI and Dangerfile now the release system is taking care of this for us

@@ -13,17 +13,14 @@ verifier:
   name: inspec
 
 platforms:
-  - name: windows-2012r2
-    driver_config:
-      box: tas50/windows_2012r2
-  - name: windows-2016
-    driver_config:
-      box: tas50/windows_2016
-      customize:
-        memory: 3072
   - name: windows-2019
     driver_config:
-      box: tas50/windows_2019
+      box: gusztavvargadr/windows-server-2019-standard
+      customize:
+        memory: 3072
+  - name: windows-2022
+    driver_config:
+      box: gusztavvargadr/windows-server-2022-standard
       customize:
         memory: 3072
 

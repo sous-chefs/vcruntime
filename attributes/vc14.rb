@@ -62,19 +62,19 @@ default['vcruntime']['vc14']['x64']['14.14.26429.4']['sha256sum'] = '9abf3a13865
 default['vcruntime']['vc14']['x64']['14.14.26429.4']['name']      = 'Microsoft Visual C++ 2017 Redistributable (x64) - 14.14.26429'
 
 # Microsoft Visual C++ 2019 Redistributable
-default['vcruntime']['vc14']['x86']['14.29.30135.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x86.exe'
-default['vcruntime']['vc14']['x86']['14.29.30135.0']['sha256sum'] = '80c7969f4e05002a0cd820b746e0acb7406d4b85e52ef096707315b390927824'
-default['vcruntime']['vc14']['x86']['14.29.30135.0']['name']      = 'Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30135'
-default['vcruntime']['vc14']['x64']['14.29.30135.0']['url']       = 'https://aka.ms/vs/16/release/vc_redist.x64.exe'
-default['vcruntime']['vc14']['x64']['14.29.30135.0']['sha256sum'] = '9b9dd72c27ab1db081de56bb7b73bee9a00f60d14ed8e6fde45dab3e619b5f04'
-default['vcruntime']['vc14']['x64']['14.29.30135.0']['name']      = 'Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.29.30135'
+default['vcruntime']['vc14']['x86']['14.29.30139.0']['url']       = 'https://download.visualstudio.microsoft.com/download/pr/7e8edcf6-f2c1-41b1-a712-3f9cd8f58db4/4C6C420CF4CBF2C9C9ED476E96580AE92A97B2822C21329A2E49E8439AC5AD30/VC_redist.x86.exe'
+default['vcruntime']['vc14']['x86']['14.29.30139.0']['sha256sum'] = '4c6c420cf4cbf2c9c9ed476e96580ae92a97b2822c21329a2e49e8439ac5ad30'
+default['vcruntime']['vc14']['x86']['14.29.30139.0']['name']      = 'Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30139'
+default['vcruntime']['vc14']['x64']['14.29.30139.0']['url']       = 'https://download.visualstudio.microsoft.com/download/pr/b929b7fe-5c89-4553-9abe-6324631dcc3a/296F96CD102250636BCD23AB6E6CF70935337B1BBB3507FE8521D8D9CFAA932F/VC_redist.x64.exe'
+default['vcruntime']['vc14']['x64']['14.29.30139.0']['sha256sum'] = '296f96cd102250636bcd23ab6e6cf70935337b1bbb3507fe8521d8d9cfaa932f'
+default['vcruntime']['vc14']['x64']['14.29.30139.0']['name']      = 'Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.29.30139'
 
 # Microsoft Visual C++ 2022 Redistributable
-default['vcruntime']['vc14']['x86']['14.30.30704.0']['url']       = 'https://aka.ms/vs/17/release/vc_redist.x86.exe'
-default['vcruntime']['vc14']['x86']['14.30.30704.0']['sha256sum'] = 'ac75a82d873e6b6f98b1d293042380764d7d263c43438e50d564fa58c9f891c2'
-default['vcruntime']['vc14']['x86']['14.30.30704.0']['name']      = 'Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.30.30704'
-default['vcruntime']['vc14']['x64']['14.30.30704.0']['url']       = 'https://aka.ms/vs/17/release/vc_redist.x64.exe'
-default['vcruntime']['vc14']['x64']['14.30.30704.0']['sha256sum'] = 'a9f5d2eaf67bf0db0178b6552a71c523c707df0e2cc66c06bfbc08bdc53387e7'
-default['vcruntime']['vc14']['x64']['14.30.30704.0']['name']      = 'Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.30.30704'
+default['vcruntime']['vc14']['x86']['14.31.31103.0']['url']       = 'https://download.visualstudio.microsoft.com/download/pr/144a5711-f076-44fa-bf55-f7e0121eb30c/B7AE307237F869E09F7413691A2CD1944357B5CEE28049C0A0D3430B47BB3EDC/VC_redist.x86.exe'
+default['vcruntime']['vc14']['x86']['14.31.31103.0']['sha256sum'] = 'b7ae307237f869e09f7413691a2cd1944357b5cee28049c0a0d3430b47bb3edc'
+default['vcruntime']['vc14']['x86']['14.31.31103.0']['name']      = 'Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.31.31103'
+default['vcruntime']['vc14']['x64']['14.31.31103.0']['url']       = 'https://download.visualstudio.microsoft.com/download/pr/d22ecb93-6eab-4ce1-89f3-97a816c55f04/37ED59A66699C0E5A7EBEEF7352D7C1C2ED5EDE7212950A1B0A8EE289AF4A95B/VC_redist.x64.exe'
+default['vcruntime']['vc14']['x64']['14.31.31103.0']['sha256sum'] = '37ed59a66699c0e5a7ebeef7352d7c1c2ed5ede7212950a1b0a8ee289af4a95b'
+default['vcruntime']['vc14']['x64']['14.31.31103.0']['name']      = 'Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.31.31103'
 
-default['vcruntime']['vc14']['version'] = '14.30.30704.0'
+default['vcruntime']['vc14']['version'] = '14.31.31103.0'
