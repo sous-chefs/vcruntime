@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of vcruntime.
 
-## Unreleased
+## 2.2.11 - *2022-07-28*
 
 - Update vc12 and vc14 checksums for new releases of 2013, 2015-2019 and 2015-2022 runtimes [@jhboricua](https://github.com/jhboricua)
 - Removed deprecated Chef Delivery job [@jhboricua](https://github.com/jhboricua)
