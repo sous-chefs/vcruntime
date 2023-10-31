@@ -4,6 +4,8 @@ This file is used to list changes made in each version of vcruntime.
 
 ## Unreleased
 
+- Standardise files with files in sous-chefs/repo-management
+
 ## 2.2.11 - *2022-07-28*
 
 - Update vc12 and vc14 checksums for new releases of 2013, 2015-2019 and 2015-2022 runtimes [@jhboricua](https://github.com/jhboricua)
