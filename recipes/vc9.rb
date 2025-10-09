@@ -27,9 +27,9 @@ if platform?('windows')
       installer_type :custom
       returns [0, 3010]
       remote_file_attributes({
-        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['name']}.exe",
-        checksum: node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['sha256sum'],
-      })
+                               path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['name']}.exe",
+                               checksum: node['vcruntime']['vc9']['x64'][node['vcruntime']['vc9']['version']]['sha256sum'],
+                             })
       options '/q'
     end
     windows_package node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name'] do
@@ -38,9 +38,9 @@ if platform?('windows')
       installer_type :custom
       returns [0, 3010]
       remote_file_attributes({
-        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name']}.exe",
-        checksum: node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum'],
-      })
+                               path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name']}.exe",
+                               checksum: node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum'],
+                             })
       options '/q'
     end
   when /i[3-6]86/
@@ -50,9 +50,9 @@ if platform?('windows')
       installer_type :custom
       returns [0, 3010]
       remote_file_attributes({
-        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name']}.exe",
-        checksum: node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum'],
-      })
+                               path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['name']}.exe",
+                               checksum: node['vcruntime']['vc9']['x86'][node['vcruntime']['vc9']['version']]['sha256sum'],
+                             })
       options '/q'
     end
   end

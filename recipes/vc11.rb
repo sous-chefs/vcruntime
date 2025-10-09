@@ -27,9 +27,9 @@ if platform?('windows')
       installer_type :custom
       returns [0, 3010]
       remote_file_attributes({
-        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name']}.exe",
-        checksum: node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum'],
-      })
+                               path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['name']}.exe",
+                               checksum: node['vcruntime']['vc11']['x64'][node['vcruntime']['vc11']['version']]['sha256sum'],
+                             })
       options '/install /quiet /norestart'
     end
     windows_package node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name'] do
@@ -38,9 +38,9 @@ if platform?('windows')
       installer_type :custom
       returns [0, 3010]
       remote_file_attributes({
-        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
-        checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
-      })
+                               path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
+                               checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
+                             })
       options '/install /quiet /norestart'
     end
   when /i[3-6]86/
@@ -50,9 +50,9 @@ if platform?('windows')
       installer_type :custom
       returns [0, 3010]
       remote_file_attributes({
-        path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
-        checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
-      })
+                               path: "#{Chef::Config[:file_cache_path]}\\package\\#{node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['name']}.exe",
+                               checksum: node['vcruntime']['vc11']['x86'][node['vcruntime']['vc11']['version']]['sha256sum'],
+                             })
       options '/install /quiet /norestart'
     end
   end
