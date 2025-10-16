@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## [2.2.17](https://github.com/sous-chefs/vcruntime/compare/2.2.16...v2.2.17) (2025-10-16)
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#74](https://github.com/sous-chefs/vcruntime/issues/74)) ([2fa8fe6](https://github.com/sous-chefs/vcruntime/commit/2fa8fe600260070caf5ad3ab5ed4bd6867ae9fbf))
+
 ## 2.2.13 - *2023-10-31*
 
 * Update workflows
