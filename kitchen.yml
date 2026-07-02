@@ -6,8 +6,9 @@ transport:
   elevated: true
 
 provisioner:
-  name: chef_zero
+  name: policyfile_zero
   deprecations_as_errors: true
+  policyfile: Policyfile.rb
 
 verifier:
   name: inspec
@@ -26,49 +27,44 @@ platforms:
 
 suites:
   - name: all
-    run_list:
-      - recipe[vcruntime::vc6]
-      - recipe[vcruntime::vc9]
-      - recipe[vcruntime::vc10]
-      - recipe[vcruntime::vc11]
-      - recipe[vcruntime::vc12]
-      - recipe[vcruntime::vc14]
+    provisioner:
+      named_run_list: all
     verifier:
       inspec_tests:
         - test/integration/default
   - name: vc6
-    run_list:
-      - recipe[vcruntime::vc6]
+    provisioner:
+      named_run_list: vc6
     verifier:
       inspec_tests:
         - test/integration/vc6
   - name: vc9
-    run_list:
-      - recipe[vcruntime::vc9]
+    provisioner:
+      named_run_list: vc9
     verifier:
       inspec_tests:
         - test/integration/vc9
   - name: vc10
-    run_list:
-      - recipe[vcruntime::vc10]
+    provisioner:
+      named_run_list: vc10
     verifier:
       inspec_tests:
         - test/integration/vc10
   - name: vc11
-    run_list:
-      - recipe[vcruntime::vc11]
+    provisioner:
+      named_run_list: vc11
     verifier:
       inspec_tests:
         - test/integration/vc11
   - name: vc12
-    run_list:
-      - recipe[vcruntime::vc12]
+    provisioner:
+      named_run_list: vc12
     verifier:
       inspec_tests:
         - test/integration/vc12
   - name: vc14
-    run_list:
-      - recipe[vcruntime::vc14]
+    provisioner:
+      named_run_list: vc14
     verifier:
       inspec_tests:
         - test/integration/vc14
