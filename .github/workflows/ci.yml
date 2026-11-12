@@ -36,10 +36,18 @@ jobs:
         run: |
           Remove-Item Env:PSModulePath -ErrorAction SilentlyContinue
           chef exec kitchen test ${{ matrix.suite }}-windows-latest --destroy=always
+      - name: Collect runtime removal diagnostics
+        if: failure() && matrix.suite == 'remove'
+        run: |
+          New-Item -ItemType Directory -Path runtime-logs -Force | Out-Null
+          Get-ChildItem "$env:TEMP/kitchen/cache/vcruntime-remove-*.log" -ErrorAction SilentlyContinue |
+            Copy-Item -Destination runtime-logs
+          Get-ChildItem "$env:TEMP/dd_vcredist*.log" -ErrorAction SilentlyContinue |
+            Copy-Item -Destination runtime-logs
       - name: Upload runtime removal diagnostics
         if: failure() && matrix.suite == 'remove'
         uses: actions/upload-artifact@v7
         with:
           name: runtime-removal-${{ matrix.platform }}
-          path: C:/Users/*/AppData/Local/Temp/kitchen/cache/vcruntime-remove-*.log
+          path: runtime-logs/*.log
           if-no-files-found: warn

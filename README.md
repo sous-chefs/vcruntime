@@ -14,7 +14,7 @@ bundle includes ARM64 binaries for ARM64 Windows. Older runtime families are
 explicit compatibility choices; they are no longer installed by default.
 
 See the [resource reference](documentation/vcruntime_install.md),
-[migration guide](documentation/migration.md) and [testing guide](TESTING.md).
+[migration guide](migration.md) and [testing guide](TESTING.md).
 
 ## Licence
 
