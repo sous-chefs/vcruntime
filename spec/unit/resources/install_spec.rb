@@ -22,6 +22,8 @@ describe 'vcruntime_install' do
         .with(source: package.fetch('url'), checksum: package.fetch('sha256sum'), installer_type: :custom,
               options: '/install /quiet /norestart', returns: [0, 3010])
       expect(chef_run.windows_package(package.fetch('name')).not_if.first.command).to include("[version]'14.52.37029.0'", ' -ge ')
+      expect(chef_run.windows_package(package.fetch('name')).not_if.first.command).to include('CurrentVersion\\Uninstall')
+      expect(chef_run.windows_package(package.fetch('name')).not_if.first.command).not_to include('VC\\Runtimes')
     end
   end
 

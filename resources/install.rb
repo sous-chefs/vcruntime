@@ -70,8 +70,12 @@ action_class do
   def runtime_version_guard(architecture)
     raise ArgumentError, 'v14 version must be numeric' unless new_resource.version.match?(/\A\d+(?:\.\d+){2,3}\z/)
 
-    wow = architecture == 'x86' && !node['kernel']['machine'].to_s.match?(/\A(?:i[3-6]86|x86)\z/i) ? 'WOW6432Node\\' : ''
-    "$runtime = Get-ItemProperty 'HKLM:\\SOFTWARE\\#{wow}Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\#{architecture}' -ErrorAction SilentlyContinue; " \
-      "if ($null -eq $runtime -or $runtime.Installed -ne 1) { $false } else { [version]$runtime.Version.TrimStart('v') -ge [version]'#{new_resource.version}' }"
+    paths = ["'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*'"]
+    unless node['kernel']['machine'].to_s.match?(/\A(?:i[3-6]86|x86)\z/i)
+      paths << "'HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*'"
+    end
+    "$runtime = Get-ItemProperty #{paths.join(', ')} -ErrorAction SilentlyContinue | " \
+      "Where-Object { $_.DisplayName -like 'Microsoft Visual C++*Redistributable (#{architecture})*' " \
+      "-and [version]$_.DisplayVersion -ge [version]'#{new_resource.version}' }; $null -ne $runtime"
   end
 end

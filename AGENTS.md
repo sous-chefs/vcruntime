@@ -21,8 +21,9 @@ Primary sources:
 - [Microsoft redistributable lifecycle](https://learn.microsoft.com/en-us/lifecycle/faq/visual-c-faq)
 - [Microsoft command-line options](https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files)
 
-Use a registry version guard for v14 rather than accepting installer error 1638.
-The x86 runtime registry entry uses WOW6432Node on a 64-bit host. Preserve every
+Use registered bundle versions for the v14 guard rather than accepting error 1638
+or trusting the stale VC/Runtimes Installed marker. Inspect both uninstall views
+on a 64-bit host. Preserve every
 legacy catalog entry and checksum. Legacy entries are installation-only; current
 bundle removal uses the registered bundle uninstaller rather than uninstalling
 only its minimum or additional MSI child package.
