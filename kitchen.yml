@@ -6,7 +6,7 @@ transport:
   elevated: true
 
 provisioner:
-  name: policyfile_zero
+  name: chef_infra
   deprecations_as_errors: true
   policyfile: Policyfile.rb
 
@@ -26,45 +26,75 @@ platforms:
         memory: 3072
 
 suites:
-  - name: all
+  - name: default
     provisioner:
-      named_run_list: all
+      named_run_list: default
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/default
+  - name: remove
+    provisioner:
+      named_run_list: remove
+      multiple_converge: 1
+      enforce_idempotency: false
+    verifier:
+      inspec_tests:
+        - test/integration/remove
+  - name: all
+    provisioner:
+      named_run_list: all
+      multiple_converge: 2
+      enforce_idempotency: true
+    verifier:
+      inspec_tests:
+        - test/integration/all
   - name: vc6
     provisioner:
       named_run_list: vc6
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/vc6
   - name: vc9
     provisioner:
       named_run_list: vc9
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/vc9
   - name: vc10
     provisioner:
       named_run_list: vc10
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/vc10
   - name: vc11
     provisioner:
       named_run_list: vc11
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/vc11
   - name: vc12
     provisioner:
       named_run_list: vc12
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/vc12
   - name: vc14
     provisioner:
       named_run_list: vc14
+      multiple_converge: 2
+      enforce_idempotency: true
     verifier:
       inspec_tests:
         - test/integration/vc14

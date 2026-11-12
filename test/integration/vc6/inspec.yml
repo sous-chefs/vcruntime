@@ -1,0 +1,9 @@
+name: vcruntime-vc6
+title: Visual C++ runtime vc6
+maintainer: Sous Chefs
+copyright: Sous Chefs
+summary: Verify Visual C++ redistributable state
+license: Apache-2.0
+version: 1.0.0
+supports:
+  - platform-family: windows

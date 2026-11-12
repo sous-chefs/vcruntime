@@ -6,6 +6,6 @@ description       'Installs Microsoft Visual C++ Runtimes'
 version           '2.2.17'
 source_url        'https://github.com/sous-chefs/vcruntime'
 issues_url        'https://github.com/sous-chefs/vcruntime/issues'
-chef_version      '>= 12.15'
+chef_version      '>= 16.0'
 
 supports 'windows'
