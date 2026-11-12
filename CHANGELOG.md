@@ -2,6 +2,23 @@
 
 This file is used to list changes made in each version of vcruntime.
 
+## [3.0.0](https://github.com/sous-chefs/vcruntime/compare/v2.2.17...v3.0.0) (2026-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate runtime recipes to a current-runtime resource ([#89](https://github.com/sous-chefs/vcruntime/issues/89))
+
+### Features
+
+* migrate runtime recipes to a current-runtime resource ([#89](https://github.com/sous-chefs/vcruntime/issues/89)) ([db31f71](https://github.com/sous-chefs/vcruntime/commit/db31f710bf823626cb1cdab8b2d0532691a6d71e))
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#74](https://github.com/sous-chefs/vcruntime/issues/74)) ([2fa8fe6](https://github.com/sous-chefs/vcruntime/commit/2fa8fe600260070caf5ad3ab5ed4bd6867ae9fbf))
+* repair workflow actionlint failures ([#79](https://github.com/sous-chefs/vcruntime/issues/79)) ([166e763](https://github.com/sous-chefs/vcruntime/commit/166e76394f724e31828ac9200dc9861618999a35))
+
 ## [2.2.17](https://github.com/sous-chefs/vcruntime/compare/2.2.16...v2.2.17) (2025-10-16)
 
 
