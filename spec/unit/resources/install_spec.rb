@@ -39,7 +39,8 @@ describe 'vcruntime_install' do
     it 'removes both complete bundles without downloading installers' do
       %w(x64 x86).each do |architecture|
         package = VCRuntime::CATALOG.fetch('vc14').fetch(architecture).fetch('14.52.37029.0')
-        expect(chef_run).to remove_windows_package(package.fetch('name')).with(options: '/uninstall /quiet /norestart')
+        expect(chef_run).to remove_windows_package(package.fetch('name'))
+          .with(installer_type: :custom, options: %r{/quiet /norestart /log ".*vcruntime-remove-#{architecture}\.log"})
         expect(chef_run.windows_package(package.fetch('name')).source).to be_nil
       end
     end

@@ -36,9 +36,11 @@ action :remove do
     raise ArgumentError, 'Removal is supported for the current v14 bundle only; legacy entries are installation compatibility data'
   end
 
-  selected_packages.each_value do |package|
+  selected_packages.each do |architecture, package|
     windows_package package.fetch('name') do
-      options '/uninstall /quiet /norestart'
+      installer_type :custom
+      # The registered (quiet) uninstall command already selects /uninstall.
+      options "/quiet /norestart /log \"#{::File.join(Chef::Config[:file_cache_path], "vcruntime-remove-#{architecture}.log")}\""
       returns [0, 3010]
       action :remove
     end
